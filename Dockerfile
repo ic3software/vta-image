@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -fsSL "https://fpp.ic3.dev/vta/${VTA_VERSION}/vta" -o /usr/local/bin/vta && \
     chmod 0755 /usr/local/bin/vta
 
-WORKDIR /root/vta
+WORKDIR /app/vta
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 0755 /entrypoint.sh
