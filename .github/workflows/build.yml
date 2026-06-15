@@ -6,7 +6,7 @@ on:
       vta_version:
         description: "VTA version"
         required: true
-        default: "0.8.0"
+        default: "0.9.0"
 
 env:
   REGISTRY: ghcr.io
