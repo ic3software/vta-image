@@ -11,7 +11,4 @@ RUN curl -fsSL "https://fpp.ic3.dev/vta-k8s/${VTA_VERSION}/vta" -o /usr/local/bi
 
 WORKDIR /app/vta
 
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod 0755 /entrypoint.sh
-
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["vta"]
